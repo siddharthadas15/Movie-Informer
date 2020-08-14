@@ -1,0 +1,15 @@
+<h1>Result Page</h1>
+
+
+<% for(var i=0;i<data["Search"].length;i++){ %>
+<div>
+    <ul>
+<li><strong><%= data["Search"][i]["Title"]%></strong> - <%=  data["Search"][i]["Year"] %></li>
+</ul>
+    <img src="<%= data["Search"][i]["Poster"] %>">
+
+</div>
+<% } %>
+
+
+<a href="/">New Search</a>
